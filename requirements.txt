@@ -1,0 +1,6 @@
+pandas
+facebook_scraper
+langchain
+openai
+openpyxl
+pyTelegramBotAPI
