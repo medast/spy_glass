@@ -17,10 +17,10 @@ class Scrape:
         return pd.DataFrame.from_dict(posts_list)
 
     @staticmethod
-    def scrape_from_groups(groups: List[str]):
+    def scrape_from_groups(groups: List[str], credentials: (str, str)):
         posts_list = []
         for group_id in groups:
-            for post in get_posts(f'groups/{group_id}/'):
+            for post in get_posts(f'groups/{group_id}/', credentials=credentials):
                 post_subset = {k: post[k] for k in info_required}
                 posts_list.append(post_subset)
             time.sleep(5)
