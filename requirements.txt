@@ -1,5 +1,7 @@
 pandas
 facebook_scraper
+facebook-page-scraper
+webdriver-manager==4.0.0
 langchain
 openai
 openpyxl
